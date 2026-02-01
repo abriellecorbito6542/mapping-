@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clickable Brain Map</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f2f4f7;
+    }
+    svg {
+      max-width: 800px;
+      width: 100%;
+      height: auto;
+    }
+    .label {
+      font-size: 14px;
+      fill: #000;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Clickable Brain Map</h1>
+<p>Click a brain part to learn more</p>
+
+<svg viewBox="0 0 800 500">
+
+  <!-- Frontal Lobe -->
+  <a href="https://www.healthline.com/human-body-maps/frontal-lobe" target="_blank">
+    <ellipse cx="250" cy="250" rx="120" ry="90" fill="#6fa8dc"/>
+    <text x="210" y="255" class="label">Frontal Lobe</text>
+  </a>
+
+  <!-- Parietal Lobe -->
+  <a href="https://www.healthline.com/human-body-maps/parietal-lobe" target="_blank">
+    <ellipse cx="380" cy="180" rx="110" ry="80" fill="#f6b26b"/>
+    <text x="345" y="185" class="label">Parietal Lobe</text>
+  </a>
+
+  <!-- Temporal Lobe -->
+  <a href="https://www.healthline.com/human-body-maps/temporal-lobe" target="_blank">
+    <ellipse cx="380" cy="330" rx="120" ry="85" fill="#93c47d"/>
+    <text x="340" y="335" class="label">Temporal Lobe</text>
+  </a>
+
+  <!-- Occipital Lobe -->
+  <a href="https://www.healthline.com/human-body-maps/occipital-lobe" target="_blank">
+    <ellipse cx="550" cy="250" rx="90" ry="75" fill="#e06666"/>
+    <text x="520" y="255" class="label">Occipital Lobe</text>
+  </a>
+
+  <!-- Cerebellum -->
+  <a href="https://www.healthline.com/human-body-maps/cerebellum" target="_blank">
+    <ellipse cx="560" cy="380" rx="70" ry="55" fill="#8e7cc3"/>
+    <text x="520" y="385" class="label">Cerebellum</text>
+  </a>
+
+</svg>
+
+</body>
+</html>
